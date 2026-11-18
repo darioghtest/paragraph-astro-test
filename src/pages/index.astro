@@ -1,0 +1,10 @@
+---
+import Base from "../layouts/Base.astro"
+import { SITE_DESCRIPTION, SITE_TITLE, withBase } from "../consts"
+---
+
+<Base title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<h1>{SITE_TITLE}</h1>
+	<p>{SITE_DESCRIPTION}</p>
+	<p><a href={withBase('/blog/')}>Read the blog</a></p>
+</Base>
