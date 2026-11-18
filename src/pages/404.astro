@@ -1,0 +1,9 @@
+---
+import Base from "../layouts/Base.astro"
+import { withBase } from "../consts"
+---
+
+<Base title="Page not found" description="This page doesn't exist.">
+	<h1>Page not found</h1>
+	<p><a href={withBase('/blog/')}>Go to the blog</a></p>
+</Base>
